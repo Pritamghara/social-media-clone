@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon index.js"
+    "dev":"nodemon server/index.js",
+    
+    "build":"npm install && npm install --prefix server npm run build --prefix server"
   },
   "author": "",
   "license": "ISC",
